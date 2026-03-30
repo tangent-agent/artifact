@@ -210,4 +210,4 @@ Additional research documentation in `Supplementary_Documents/supplementary.pdf`
 
 The complete dataset used in this research is available on Figshare:
 
-**DOI:** [10.6084/m9.figshare.31883329]([https://doi.org/10.6084/m9.figshare.31883329](https://figshare.com/articles/dataset/Tangent/31883329?file=63288853))
+**DOI:** [10.6084/m9.figshare.31883329](https://figshare.com/articles/dataset/Tangent/31883329?file=63288853)
