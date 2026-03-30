@@ -1,0 +1,69 @@
+[project]
+name = "tangent"
+version = "0.0.1"
+description = "Testing for Agents"
+authors = [
+    { name = "X", email = "abcd@efgh.com" },
+]
+requires-python = ">=3.13,<3.14"
+readme = "README.md"
+#license = "License"
+dependencies = [
+    "joblib==1.4.2",
+    "typer>=0.17.4",
+    "rich==14.0.0",
+    "tqdm>=4.66.1,<5",
+    "requests>=2.32.0,<3",
+    "toml>=0.10.2,<0.11",
+    "click>=8.1.7",
+    "jinja2>=3.1.2,<4",
+    "openai>=1.12.0,<2",
+    "python-dotenv>=1.0.1,<2",
+    "ray>=2.9.0,<3",
+    "scalpel",
+    "astunparse",
+    "typeshed_client",
+    "astor",
+    "graphviz",
+    "setuptools<82.0.0",
+    "pycg>=0.0.6",
+    "networkx>=3.4.2,<4",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "openpyxl>=3.1.0,<4",
+    "pandas",
+    "scipy>=1.11.0",
+    "tree-sitter>=0.20.0",
+    "tree-sitter-python>=0.20.0"
+]
+
+[tool.uv.sources]
+scalpel = { git = "ssh://git@github.com/Scalpel/Scalpel.git", branch = "main" }
+
+
+[project.scripts]
+tangent = "tangent.cli:app"
+
+[dependency-groups]
+dev = [
+    "black>=24.3.0,<25",
+    "pytest>=7.4.3,<8",
+    "pytest-cov>=4.1.0,<5",
+    "pytest-pspec>=0.0.4,<0.0.5",
+    "pylint>=3.0.2,<4",
+    "flake8>=6.1.0,<7",
+    "coverage>=7.3.2,<8",
+    "pyinstaller>=6.6.0,<7",
+    "debugpy>=1.8.2,<2",
+    "ollama>=0.4.6,<0.5",
+    "pip>=23,<25"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
+
